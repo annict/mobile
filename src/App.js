@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { AppRegistry } from 'react-native'
-import { Provider } from 'react-redux'
+import React, { Component } from "react"
+import { AppRegistry } from "react-native"
+import { Provider } from "react-redux"
 
-import configureStore from './root.store'
-import { MobileApp } from './routes'
+import configureStore from "./root.store"
+import { MobileApp } from "./routes"
 
 const store = configureStore()
 
@@ -17,4 +17,4 @@ class App extends Component {
   }
 }
 
-AppRegistry.registerComponent('Annict', () => App)
+AppRegistry.registerComponent("Annict", () => App)
