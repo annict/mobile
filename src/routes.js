@@ -1,7 +1,12 @@
 import { StackNavigator, TabNavigator, TabBarBottom, NavigationActions } from "react-navigation"
 
-import { HomeScreen } from "./containers/home"
+import { MainTabNavigator } from "./navigators"
 
-export const MobileApp = StackNavigator({
-  Home: { screen: HomeScreen },
+export const Annict = StackNavigator({
+  Main: {
+    screen: MainTabNavigator,
+    navigationOptions: {
+      header: null,
+    },
+  },
 })

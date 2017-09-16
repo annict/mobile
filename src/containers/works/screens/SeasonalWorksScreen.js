@@ -1,14 +1,14 @@
 import React, { Component } from "react"
 import { View, Text } from "react-native"
 
-class Home extends Component {
+class SeasonalWorks extends Component {
   render() {
     return (
       <View>
-        <Text>Hello</Text>
+        <Text>2017 Fall Anime</Text>
       </View>
     )
   }
 }
 
-export const HomeScreen = Home
+export const SeasonalWorksScreen = SeasonalWorks
