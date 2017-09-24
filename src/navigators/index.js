@@ -1,3 +1,3 @@
 export * from "./SeasonalWorksStackNavigator"
-export * from "./HomeGuestStackNavigator"
+export * from "./HomeStackNavigator"
 export * from "./MainTabNavigator"
