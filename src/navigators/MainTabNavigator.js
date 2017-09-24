@@ -3,7 +3,7 @@ import { TabNavigator } from "react-navigation"
 import Icon from "react-native-vector-icons/FontAwesome"
 import { Button, Text, Footer, FooterTab } from "native-base"
 
-import { colors } from "../config"
+import { colors, I18n } from "../config"
 import { HomeGuestStackNavigator, SeasonalWorksStackNavigator } from "./"
 
 export const MainTabNavigator = TabNavigator(
@@ -24,31 +24,31 @@ export const MainTabNavigator = TabNavigator(
           stateIndex: 0,
           screen: "Home",
           iconName: "home",
-          text: "Home",
+          text: I18n.t("noun.home", { locale: "en" }),
         },
         {
           stateIndex: 1,
           screen: "SeasonalWorks",
           iconName: "search",
-          text: "Search",
+          text: I18n.t("verb.search", { locale: "en" }),
         },
         {
           stateIndex: 2,
           screen: "SeasonalWorks",
           iconName: "pencil",
-          text: "Track",
+          text: I18n.t("verb.track", { locale: "en" }),
         },
         {
           stateIndex: 3,
           screen: "SeasonalWorks",
           iconName: "user",
-          text: "Profile",
+          text: I18n.t("noun.profile", { locale: "en" }),
         },
         {
           stateIndex: 4,
           screen: "SeasonalWorks",
           iconName: "th",
-          text: "More",
+          text: I18n.t("noun.menu", { locale: "en" }),
         },
       ].map(data => {
         return (
@@ -59,7 +59,7 @@ export const MainTabNavigator = TabNavigator(
             onPress={() => props.navigation.navigate(data.screen)}
           >
             <Icon color={colors.muted} name={data.iconName} size={28} />
-            <Text style={{ fontSize: 10 }}>{data.text}</Text>
+            <Text style={{ fontSize: 9 }}>{data.text}</Text>
           </Button>
         )
       })
