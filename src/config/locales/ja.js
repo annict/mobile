@@ -3,6 +3,8 @@ export default {
     home: "ホーム",
     menu: "メニュー",
     profile: "プロフィール",
+    signIn: "ログイン",
+    signUp: "ユーザ登録",
   },
   verb: {
     search: "検索する",

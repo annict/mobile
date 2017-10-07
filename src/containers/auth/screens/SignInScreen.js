@@ -1,4 +1,3 @@
-import { Button } from "native-base"
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { View, Text } from "react-native"
@@ -7,7 +6,7 @@ const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated,
 })
 
-class Home extends Component {
+class SignIn extends Component {
   props: {
     isAuthenticated: boolean,
     navigation: Object,
@@ -20,13 +19,10 @@ class Home extends Component {
 
     return (
       <View>
-        <Text>Hello {text}!</Text>
-        <Button onPress={() => this.props.navigation.navigate("Auth")}>
-          <Text>Sign Up!</Text>
-        </Button>
+        <Text>Sign In!</Text>
       </View>
     )
   }
 }
 
-export const HomeScreen = connect(mapStateToProps)(Home)
+export const SignInScreen = connect(mapStateToProps)(SignIn)
